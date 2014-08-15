@@ -17,5 +17,6 @@ let onSaleInferred = true
 let onSaleExplicit:Bool = false
 
 let nameInferred = "Whoopie Cushion"
-let nameExplicit:String = "Whoopie Cushion"
+let nameExplicit:String = "Whoopie"
+
 
