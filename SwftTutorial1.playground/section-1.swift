@@ -1,2 +1,2 @@
 let tutorialTeas = 56
-let editorialtea
+let editorialtea = 66
