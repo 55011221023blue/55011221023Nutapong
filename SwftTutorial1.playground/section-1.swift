@@ -59,6 +59,38 @@ shoppingList [4...6] = ["Bananas" , "Apples"]
 
 let array: Array<Int> = [1,2,3,45]
 let dictionary = ["dog": 6,"elephant": 2]
-//dictionary["dog"]
+dictionary["dog"]
+
+
+var airports: [String: String] = ["TY0": "Tokyo", "DUB": "Dublin"]
+
+
+if airports.isEmpty {
+    println("Emprty")
+}else{
+    println("not Emprty")
+}
+
+//test
+for x in airports.values {
+    x
+}
+
+airports["APL"] = "Apple International"
+// "Apple International" is not the real airport for API , So delete it
+
+airports["APL"] = nil
+
+//APL has now been remove fome the distionary
+
+
+if let removeValue = airports.removeValueForKey("DUB"){
+
+}else{
+    
+}
+
+
+
 
 
