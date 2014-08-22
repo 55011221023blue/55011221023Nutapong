@@ -1,8 +1,8 @@
 let tutorialTeam = 56
 let editorialTeam = 23
-let totalTeam = tutorialTeam + editorialTeam
+var totalTeam = tutorialTeam + editorialTeam
 
-//totalTeam += 1
+totalTeam += 1
 
 let tutorialTeamInferred = -19
 let tutorialTeamExplicit: Int = -19
