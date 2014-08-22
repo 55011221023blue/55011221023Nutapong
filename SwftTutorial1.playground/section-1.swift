@@ -55,3 +55,10 @@ var firstItem = shoppingList[0]
 shoppingList [4...6] = ["Bananas" , "Apples"]
 //shopinglist now contain 6 items
 
+
+
+let array: Array<Int> = [1,2,3,45]
+let dictionary = ["dog": 6,"elephant": 2]
+//dictionary["dog"]
+
+
