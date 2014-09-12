@@ -60,14 +60,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="tmL-30-d6o"/>
                     <connections>
-                        <outlet property="bt" destination="kCi-fD-OfC" id="zXt-O5-OBc"/>
-                        <outlet property="cc" destination="kCi-fD-OfC" id="3cf-Sj-r24"/>
                         <outlet property="resultsTextView" destination="QTB-jl-XnC" id="m13-DZ-KwI"/>
                         <outlet property="taxtPctLabel" destination="vug-M6-Dbu" id="7cp-VK-JmO"/>
                         <outlet property="taxtPctSlider" destination="mRt-pC-EPC" id="2Bs-7q-4f4"/>
-                        <outlet property="textPctLabel" destination="vug-M6-Dbu" id="o0w-aj-tNJ"/>
                         <outlet property="totalTextField" destination="aSj-sl-GbE" id="KDK-uI-eYW"/>
-                        <outletCollection property="ac_bt" destination="kCi-fD-OfC" id="ImF-8d-yT6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

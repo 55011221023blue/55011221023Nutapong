@@ -11,9 +11,12 @@ import Foundation
 
 class TipCalculatorModel {
     //2
-    let total: Double
-    let taxPct: Double
-    let subtotal: Double
+    var total: Double
+    var taxPct: Double
+    var subtotal: Double
+    
+    
+  
     
     //3
     init (total:Double, taxPct:Double) {
@@ -41,6 +44,8 @@ class TipCalculatorModel {
         }
         return retval
     }
+    get{
+        }
 }
 
 
