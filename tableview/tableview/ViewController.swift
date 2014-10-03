@@ -8,9 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    override func viewDidLoad() {
+    let cellIdentifier = "cellIdentifier"
+    var tableData = ["Bus","Helicopter","Truck"]
+    @IBOutlet var tabView: UITableView!
+    
+    
+    override func viewDidLoad()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
