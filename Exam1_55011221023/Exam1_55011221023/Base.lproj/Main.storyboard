@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.67760179793083319" green="0.8125758325035185" blue="0.87860903532608692" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.7539857212470924" green="0.78450002078029102" blue="0.79184358016304346" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="BT_profit" destination="FMI-pG-Sz3" id="Krh-9B-mZr"/>
