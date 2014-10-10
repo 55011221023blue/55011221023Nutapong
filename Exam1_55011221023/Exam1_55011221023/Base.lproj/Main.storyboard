@@ -49,39 +49,53 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xtr-Ld-lT0">
+                                <rect key="frame" x="0.0" y="224" width="600" height="376"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="total_in" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WBd-fw-Jxf">
                                 <rect key="frame" x="229" y="139" width="194" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xtr-Ld-lT0">
-                                <rect key="frame" x="0.0" y="226" width="600" height="374"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSd-wY-4md">
-                                <rect key="frame" x="161" y="139" width="33" height="30"/>
+                                <rect key="frame" x="135" y="139" width="85" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Total">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dow_tatol:forEvent:" destination="vXZ-lx-hvc" eventType="touchDown" id="H6e-gJ-HQE"/>
+                                    <action selector="bt:" destination="vXZ-lx-hvc" eventType="touchDown" id="DUG-iG-RSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-pG-Sz3">
+                                <rect key="frame" x="16" y="186" width="80" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Profit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bt:" destination="vXZ-lx-hvc" eventType="touchDown" id="4I4-O0-3Zs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="name_inp" destination="m0P-Bz-n4l" id="QNU-wy-mU9"/>
+                        <outlet property="Valume_inp" destination="L1l-L8-ndU" id="kGr-p8-Al3"/>
+                        <outlet property="name_inp" destination="m0P-Bz-n4l" id="BtV-6Y-SxD"/>
                         <outlet property="name_input" destination="m0P-Bz-n4l" id="ajt-0d-i3B"/>
-                        <outlet property="price_input" destination="NDk-a1-jsE" id="xR5-0X-fWU"/>
+                        <outlet property="price_inp" destination="NDk-a1-jsE" id="ckf-QS-bRr"/>
                         <outlet property="table_output" destination="Xtr-Ld-lT0" id="BLh-jh-B35"/>
-                        <outlet property="total_output" destination="WBd-fw-Jxf" id="15n-0Z-r6f"/>
                         <outlet property="valume_input" destination="L1l-L8-ndU" id="be4-YC-MmS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="235"/>
+            <point key="canvasLocation" x="301" y="163"/>
         </scene>
     </scenes>
 </document>

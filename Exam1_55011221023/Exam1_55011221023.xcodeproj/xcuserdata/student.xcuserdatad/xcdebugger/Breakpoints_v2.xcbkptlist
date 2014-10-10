@@ -10,101 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Exam1_55011221023/ViewController.swift"
-            timestampString = "434617973.043515"
+            timestampString = "434620482.665391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Exam1_55011221023.ViewController.price_input.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
-                  moduleName = "Exam1_55011221023"
-                  urlString = "file:///Users/student/Desktop/55011221023Nutapong/Exam1_55011221023/Exam1_55011221023/ViewController.swift"
-                  timestampString = "434618079.725167"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Exam1_55011221023.ViewController.init (Exam1_55011221023.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Exam1_55011221023.ViewController"
-                  moduleName = "Exam1_55011221023"
-                  urlString = "file:///Users/student/Desktop/55011221023Nutapong/Exam1_55011221023/Exam1_55011221023/ViewController.swift"
-                  timestampString = "434618079.725288"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "71">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Exam1_55011221023.ViewController.init (Exam1_55011221023.ViewController.Type)() -&gt; Exam1_55011221023.ViewController"
-                  moduleName = "Exam1_55011221023"
-                  urlString = "file:///Users/student/Desktop/55011221023Nutapong/Exam1_55011221023/Exam1_55011221023/ViewController.swift"
-                  timestampString = "434618079.726087"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "70">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Exam1_55011221023.ViewController.init (Exam1_55011221023.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Exam1_55011221023.ViewController"
-                  moduleName = "Exam1_55011221023"
-                  urlString = "file:///Users/student/Desktop/55011221023Nutapong/Exam1_55011221023/Exam1_55011221023/ViewController.swift"
-                  timestampString = "434618079.726277"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "70">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Exam1_55011221023/ViewController.swift"
-            timestampString = "434617538.931608"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Exam1_55011221023/ViewController.swift"
-            timestampString = "434617973.043515"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Exam1_55011221023
+//  Exam1_55011221023_2
 //
 //  Created by Student on 10/10/14.
 //  Copyright (c) 2014 Student. All rights reserved.
@@ -10,12 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var name_inp: UITextField!
-    @IBOutlet var Valume_inp: UITextField!
-    @IBOutlet var price_inp: UITextField!
-    @IBOutlet var table_output: UITableView!
+    @IBOutlet var name_input: UITextField!
     
-    
+ 
+    @IBAction func tatol_bt(sender: AnyObject) {
+        name_input.text="111"
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
