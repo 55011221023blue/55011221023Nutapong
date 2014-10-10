@@ -10,26 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var totalTextField : UITextField!
+    var total_re = 0
+    var val = 0.0
+    var price = 0.0
+    var tt = ""
+    
+    
+    @IBOutlet var tox: UITextField!
     @IBOutlet var taxtPctSlider: UISlider!
+    @IBOutlet var data2: UITextField!
+   
+    
     @IBOutlet var taxtPctLabel : UILabel!
     @IBOutlet var resultsTextView: UITextView!
     
     @IBAction func calculatrTapped(sender : AnyObject){
-        
-        tipCalc.total = Double((totalTextField.text as NSString).doubleValue)
-        let possibleTips = tipCalc.returnPossibleTips()
-        var results = ""
-        
-        for(tipPct, tipValue) in possibleTips {
-            
-            results += "\(tipPct)%: \(tipValue)\n"
-        }
-        resultsTextView.text = results
-    
+        val = totalTextField.text
+        price = data2.text.toInt()!
+        total_re = val + price
+        tt = String(total_re)
+        tox.text = tt
+   
+
     }
     @IBAction func taxPercentageChanged(sender : AnyObject){
         tipCalc.taxPct = Double(taxtPctSlider.value) / 100.0
-        refreshUI()
+        
     }
     @IBAction func viewTapped(sender : AnyObject){
         totalTextField.resignFirstResponder()
@@ -37,13 +43,6 @@ class ViewController: UIViewController {
     
     let tipCalc = TipCalculatorModel(total: 33.25,taxPct:0.06)
     
-    func refreshUI(){
-        totalTextField.text = String(format: "%0.2f", tipCalc.total)
-        taxtPctSlider.value = Float(tipCalc.taxPct) * 100.0
-        taxtPctLabel.text = "Tex Percentage (\(Int(taxtPctSlider.value))%)"
-        resultsTextView.text = ""
-        
-    }
     
  
   
@@ -51,7 +50,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        refreshUI()
+        
     }
 
     override func didReceiveMemoryWarning() {

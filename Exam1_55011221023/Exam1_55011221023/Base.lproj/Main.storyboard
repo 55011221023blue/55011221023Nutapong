@@ -66,7 +66,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="bt:" destination="vXZ-lx-hvc" eventType="touchDown" id="DUG-iG-RSo"/>
+                                    <action selector="bt_total:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8NO-0g-GUO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-pG-Sz3">
@@ -78,16 +78,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="BT_profit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nZI-29-KJE"/>
                                     <action selector="bt:" destination="vXZ-lx-hvc" eventType="touchDown" id="4I4-O0-3Zs"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.67760179793083319" green="0.8125758325035185" blue="0.87860903532608692" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="BT_profit" destination="FMI-pG-Sz3" id="Krh-9B-mZr"/>
                         <outlet property="Valume_inp" destination="L1l-L8-ndU" id="kGr-p8-Al3"/>
                         <outlet property="name_inp" destination="m0P-Bz-n4l" id="BtV-6Y-SxD"/>
-                        <outlet property="name_input" destination="m0P-Bz-n4l" id="ajt-0d-i3B"/>
                         <outlet property="price_inp" destination="NDk-a1-jsE" id="ckf-QS-bRr"/>
                         <outlet property="table_output" destination="Xtr-Ld-lT0" id="BLh-jh-B35"/>
                         <outlet property="valume_input" destination="L1l-L8-ndU" id="be4-YC-MmS"/>

@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet var price_inp: UITextField!
     @IBOutlet var table_output: UITableView!
     
-    
+    @IBAction func bt_total(sender: AnyObject) {
+        
+    }
+ 
+    @IBAction func BT_profit(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
