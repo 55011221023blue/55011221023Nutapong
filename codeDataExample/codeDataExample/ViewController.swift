@@ -7,10 +7,10 @@
 //
 
 import UIKit
-
+import CoreData
 class ViewController: UIViewController {
     
-    var items = [String]()
+    var items = [NSManagedObject]()
     @IBOutlet weak var tableView: UITableView!
     @IBAction func additem(sender: AnyObject) {
         
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
             style: .Default) { (action: UIAlertAction!) -> Void  in
                 
                 let textField = alert.textFields![0] as UITextField
-                self.items.append(textField.text)
+                self.saveName(textField.text)
                 self.tableView.reloadData()
                 
         
@@ -62,8 +62,28 @@ class ViewController: UIViewController {
     func tableView(tableView: UITableView,cellForRowAtIndexPath
         indexPath: NSIndexPath) ->UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
-            cell.textLabel!.text = items[indexPath.row]
+            let item = items[indexPath.row]
+            cell.textLabel!.text = item.valueForKey("name") as String?
             return cell
+    }
+    func saveName(name: String){
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: managedContext)
+        
+        let item = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        
+        item.setValue(name, forKey: "name")
+        
+        var error:NSError?
+        if !managedContext.save(&error){
+                println("clold not save \(error),\(error?.userInfo) ")
+        }
+        items.append(item)
+        
     }
 
 }
