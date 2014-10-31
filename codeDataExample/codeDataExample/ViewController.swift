@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreData
+
 class ViewController: UIViewController {
     
     var items = [String]()
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     }
 
     func tableView(tableView:UITableView,
-        numberOfRowsinSection section: Int) ->Int{
+        numberOfRowsinSection section: Int) -> Int{
             return items.count
     
     }
