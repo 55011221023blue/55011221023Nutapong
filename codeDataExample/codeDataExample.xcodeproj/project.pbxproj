@@ -14,7 +14,6 @@
 		3F53C17F1A0363D100D0085E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F53C17E1A0363D100D0085E /* Images.xcassets */; };
 		3F53C1821A0363D100D0085E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F53C1801A0363D100D0085E /* LaunchScreen.xib */; };
 		3F53C18E1A0363D100D0085E /* codeDataExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53C18D1A0363D100D0085E /* codeDataExampleTests.swift */; };
-		3F53C1CA1A0376D400D0085E /* codeDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F53C1C81A0376D400D0085E /* codeDataExample.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		3F53C1871A0363D100D0085E /* codeDataExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeDataExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F53C18C1A0363D100D0085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F53C18D1A0363D100D0085E /* codeDataExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeDataExampleTests.swift; sourceTree = "<group>"; };
-		3F53C1C91A0376D400D0085E /* codeDataExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = codeDataExample.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 		3F53C1711A0363D100D0085E /* codeDataExample */ = {
 			isa = PBXGroup;
 			children = (
-				3F53C1C81A0376D400D0085E /* codeDataExample.xcdatamodeld */,
 				3F53C1741A0363D100D0085E /* AppDelegate.swift */,
 				3F53C1791A0363D100D0085E /* ViewController.swift */,
 				3F53C17B1A0363D100D0085E /* Main.storyboard */,
@@ -229,7 +226,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F53C18E1A0363D100D0085E /* codeDataExampleTests.swift in Sources */,
-				3F53C1CA1A0376D400D0085E /* codeDataExample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,17 +429,6 @@
 			currentVersion = 3F53C1771A0363D100D0085E /* codeDataExample.xcdatamodel */;
 			path = codeDataExample.xcdatamodeld;
 			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		3F53C1C81A0376D400D0085E /* codeDataExample.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3F53C1C91A0376D400D0085E /* codeDataExample.xcdatamodel */,
-			);
-			currentVersion = 3F53C1C91A0376D400D0085E /* codeDataExample.xcdatamodel */;
-			name = codeDataExample.xcdatamodeld;
-			path = codeDataExampleTests/codeDataExample.xcdatamodeld;
-			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
