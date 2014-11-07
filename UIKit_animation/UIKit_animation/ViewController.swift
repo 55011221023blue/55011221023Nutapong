@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        square = UIView(frame: CGRect(x: 50, y: 100, width: 100, height: 20))
+        square = UIView(frame: CGRect(x: 50, y: 500, width: 20, height: 20))
         square.backgroundColor = UIColor.grayColor()
         view.addSubview(square)
         
@@ -31,17 +31,30 @@ class ViewController: UIViewController {
         barrier.backgroundColor = UIColor.redColor()
         view.addSubview(barrier)
         
-        collision = UICollisionBehavior(items: [square,barrier])
+        
+        let barrier2 = UIView(frame: CGRect(x: 100, y: 100, width: 20, height: 20))
+        barrier2.backgroundColor = UIColor.greenColor()
+        view.addSubview(barrier2)
+        
+        let barrier3 = UIView(frame: CGRect(x: 100, y: 100, width: 20, height: 20))
+        barrier3.backgroundColor = UIColor.blueColor()
+        view.addSubview(barrier3)
+        
+        
+        
+        
+        
+        collision = UICollisionBehavior(items: [square,barrier,barrier2,barrier3])
         collision.translatesReferenceBoundsIntoBoundary = true
         
         
         animator = UIDynamicAnimator(referenceView: view)
-        gravity = UIGravityBehavior(items: [square,barrier])
+        gravity = UIGravityBehavior(items: [square,barrier,barrier2,barrier3])
         animator.addBehavior(gravity)
         animator.addBehavior(collision)
         
-        let itemBehaviour = UIDynamicItemBehavior(items: [square,barrier])
-        itemBehaviour.elasticity = 1.12
+        let itemBehaviour = UIDynamicItemBehavior(items: [square,barrier,barrier2,barrier3])
+        itemBehaviour.elasticity = 1.1
         animator.addBehavior(itemBehaviour)
         
         
