@@ -39,11 +39,11 @@ class ViewController: UIViewController {
         self.view.addSubview(p2);
         
         
-        var pw = UIImageView(frame: CGRectMake(100, 220, 30, 30));
+        var pw = UIImageView(frame: CGRectMake(200, 220, 30, 30));
         pw.image  = UIImage(named: "w.png");
         self.view.addSubview(pw);
         
-        pq = UIImageView(frame: CGRectMake(180, 330, 3, 248));
+        pq = UIImageView(frame: CGRectMake(150, 430, 3, 248));
         pq.image  = UIImage(named: "q.png");
         self.view.addSubview(pq);
         

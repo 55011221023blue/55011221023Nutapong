@@ -13,17 +13,29 @@ class ViewController: UIViewController , UITableViewDataSource {
     var items = [NSManagedObject]()
     @IBOutlet weak var tableView: UITableView!
     @IBAction func addItem(sender: AnyObject) {
-        var alert = UIAlertController(title: "New item", message: "Add a item", preferredStyle: .Alert)
-        let saveAction = UIAlertAction(title: "Save", style: .Default){
+        var alert = UIAlertController(title: "เพิ่มใหม่", message: "ชื่อหุ้น", preferredStyle: .Alert)
+          let saveAction = UIAlertAction(title: "Save", style: .Default){
             (action:UIAlertAction!) -> Void in
             let textField = alert.textFields![0] as UITextField
-            self.saveName(textField.text)
+            let textField1 = alert.textFields![1] as UITextField
+            let textField2 = alert.textFields![2] as UITextField
+            let variableString = "\(textField.text)       \(textField1.text)       \(textField2.text)"
+            
+            self.saveName(variableString)
             self.tableView.reloadData()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default){(action: UIAlertAction!) -> Void in
         }
         alert.addTextFieldWithConfigurationHandler{(textField: UITextField!) -> Void in
+            
         }
+        alert.addTextFieldWithConfigurationHandler{(textField1: UITextField!) -> Void in
+            
+        }
+        alert.addTextFieldWithConfigurationHandler{(textField2: UITextField!) -> Void in
+            
+        }
+       
         alert.addAction(saveAction)
         alert.addAction(cancelAction)
         
@@ -33,7 +45,7 @@ class ViewController: UIViewController , UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\"Shopping List\""
+        title = "ข้อมูลหุ้น"
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         // Do any additional setup after loading the view, typically from a nib.
     }
