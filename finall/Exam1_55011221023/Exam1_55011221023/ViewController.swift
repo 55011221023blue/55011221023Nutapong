@@ -19,7 +19,7 @@ class ViewController: UIViewController , UITableViewDataSource {
             let textField = alert.textFields![0] as UITextField
             let textField1 = alert.textFields![1] as UITextField
             let textField2 = alert.textFields![2] as UITextField
-            let variableString = "\(textField.text)       \(textField1.text)       \(textField2.text)"
+            let variableString = "\(textField.text)\t\t\(textField1.text)\t\t\(textField2.text)"
             
             self.saveName(variableString)
             self.tableView.reloadData()
